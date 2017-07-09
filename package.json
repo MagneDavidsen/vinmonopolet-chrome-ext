@@ -1,0 +1,17 @@
+{
+  "name": "untappd-proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3",
+    "node-fetch": "^1.7.1",
+    "vinmonopolet": "^3.1.2"
+  }
+}
