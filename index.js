@@ -27,7 +27,7 @@ app.get('/untappd', function (req, res) {
             .then(function(responseInfo) {
                 return responseInfo.json();
             }).then(function(json) {
-                json.vinmonopolet_name = req.query.productName;
+                json.response.beer.vinmonopolet_name = req.query.productName;
                 cache[req.query.productName] = json.response.beer;
                 res.send(cache[req.query.productName]);
             });
