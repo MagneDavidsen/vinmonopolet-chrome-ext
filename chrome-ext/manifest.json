@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+
+  "name": "Untappd for Vinmonopolet",
+  "version": "0.1.0",
+  "description": "",
+  "permissions": [ "https://untappd-proxy.herokuapp.com/*" ],
+  "content_scripts": [{
+    "css": ["styles.css"],
+    "js": ["content.js"],
+    "matches": ["https://www.vinmonopolet.no/vmpSite/Nettbutikk-kategorier/*"]
+  }]
+
+}
