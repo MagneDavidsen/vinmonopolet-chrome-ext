@@ -20,9 +20,12 @@ for (var i = 0, l = products.length; i < l; i++) {
                     var bryggeri = document.createElement("div");
                     var navn = document.createElement("div");
                     var rating = document.createElement("div");
-                    bryggeri.appendChild(document.createTextNode(`Bryggeri: ${data.brewery.brewery_name}`));
-                    navn.appendChild(document.createTextNode(`Navn: ${data.beer_name}`));
+                    var untappd = document.createElement("div");
+                    bryggeri.appendChild(document.createTextNode(`${data.brewery.brewery_name}`));
+                    navn.appendChild(document.createTextNode(`${data.beer_name}`));
                     rating.appendChild(document.createTextNode(`Rating: ${data.rating_score}`));
+                    untappd.appendChild(document.createTextNode(`UNTAPPD`));
+                    newDiv.appendChild(untappd);
                     newDiv.appendChild(bryggeri);
                     newDiv.appendChild(navn);
                     newDiv.appendChild(rating);
